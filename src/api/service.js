@@ -1,6 +1,5 @@
 import axios from 'axios';
 import qs from 'qs';
-import * as ElementPlus from 'element-plus';
 
 const request = axios.create({
     timeout: 5000,
@@ -20,19 +19,8 @@ request.interceptors.response.use(
             } else {
                 return Promise.resolve(res);
             }
-        } else {
-            ElementPlus.Message({
-                message: res.message,
-                type: 'warning'
-            })
-            return Promise.reject(res);
         }
     }, (err) => {
-        // 若请求失败则抛出异常
-        ElementPlus.Message({
-            message: err.message,
-            type: 'error'
-        })
         return Promise.reject(err)
     }
 );
