@@ -5,6 +5,15 @@
   </section>
 </template>
 
+<script setup>
+import { ElMessage } from 'element-plus';
+
+ElMessage({
+  message: '欢迎进入安澜网监控大盘',
+  type: 'success'
+})
+</script>
+
 <style scoped>
 .bg-video {
   position: absolute;
