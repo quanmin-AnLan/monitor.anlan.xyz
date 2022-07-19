@@ -1,6 +1,9 @@
 <template>
   <router-view></router-view>
-  <video class="bg-video" src="http://static.anlan.xyz/screenbg.mp4" muted autoplay loop></video>
+  <section class="bg-video">
+    <video class="bg-video-item" src="http://static.anlan.xyz/screenbg.mp4" muted autoplay loop></video>
+    <video class="bg-video-item" src="http://static.anlan.xyz/screenbg.mp4" muted autoplay loop></video>
+  </section>
 </template>
 
 <style scoped>
@@ -10,5 +13,9 @@
   left: 0;
   width: 100%;
   z-index: -1;
+  font-size: 0;
+}
+.bg-video-item {
+  width: 100%;
 }
 </style>
