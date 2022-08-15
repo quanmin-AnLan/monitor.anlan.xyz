@@ -3,7 +3,7 @@ import qs from 'qs';
 
 const request = axios.create({
     timeout: 5000,
-    baseURL: 'http://data.anlan.xyz',
+    baseURL: 'http://api.anlan.xyz',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
     }
